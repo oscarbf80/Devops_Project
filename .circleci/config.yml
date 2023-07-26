@@ -1,0 +1,30 @@
+version: 2.1  
+
+jobs:
+  build:
+    working_directory: ~/circleci-python
+    docker:
+      - image: "python:3.8"
+    steps:
+      - checkout
+      - run:
+        # creates a virtual environment for you project, 
+          name: Run unit tests
+          command: |
+            pip install -r requirements.txt
+            
+  test:
+    working_directory: ~/circleci-python
+    docker:
+      - image: "python:3.8"
+    steps:
+      - checkout
+      - run: python3 main.py
+      
+workflows:
+  build_and_test:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build
