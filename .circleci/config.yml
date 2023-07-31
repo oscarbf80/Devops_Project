@@ -6,12 +6,7 @@ jobs:
     docker:
       - image: "python:3.8"
     steps:
-      - checkout
-      - run:
-        # creates a virtual environment for you project, 
-          name: Run unit tests
-          command: |
-            
+      - checkout              
   test:
     working_directory: ~/circleci-python
     docker:
