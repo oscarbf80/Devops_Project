@@ -11,8 +11,6 @@ jobs:
         # creates a virtual environment for you project, 
           name: Run unit tests
           command: |
-            # pip install --upgrade pip
-            # pip install -r requirements.txt
             
   test:
     working_directory: ~/circleci-python
