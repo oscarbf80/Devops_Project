@@ -1,6 +1,6 @@
 import random
 def randomnumber():
-    return random.randrange(1, 100)+100  
+    return random.randrange(1, 100) 
 
 
 def main():   
