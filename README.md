@@ -9,11 +9,11 @@ To test the applications follow the below steps:
 
 1. Pull the repository from github
 1. build docker enviroment in terminal 
-```
-docker build -t pythonapp .
-```
+    ```
+    docker build -t pythonapp .
+    ```
 1. Run the project on docker
-```
-docker run pythonapp
-```
+    ```
+    docker run pythonapp
+    ```
 1. to test CI/CD Pipeline open CircleCi and locate the repository
